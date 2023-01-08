@@ -348,9 +348,7 @@ margin-bottom: 12px;
     border-radius: 50%;
     background-color: var(--primary-brand);
 
-    transition-property: backgroung-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:nth-last-child(1) {
@@ -509,6 +507,9 @@ margin-bottom: 0;
 .card-photo {
     position: relative;
     overflow: hidden;
+
+    width: 360px;
+    height: 300px;
 }
 
 .card-overlay {
@@ -519,7 +520,7 @@ margin-bottom: 0;
     height: 300px;
 
     background-color: var(--primary-brand);
-    opacity: 0;
+    
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,12 +529,12 @@ margin-bottom: 0;
 
 
 .card-link:hover .card-overlay {
-    opacity: 1;
+    
     transform: translateY(0);
 }
 
 .card-link:focus .card-overlay {
-    opacity: 1;
+    
     transform: translateY(0);
 }
 
@@ -554,6 +555,7 @@ color: var(--light);
 
 
 .project-name {
+    width: 360px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
@@ -634,11 +636,10 @@ letter-spacing: 0.02em;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: var(--light);
-    transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-items:nth-last-child(1) {
